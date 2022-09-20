@@ -7,14 +7,10 @@ public class Vertex {
     }
 
     public String toString(){
-        String s1 = "(x:"+x+"; y:"+y+")";
-
-        return s1;
+        return "(x:"+x+"; y:"+y+")";
     }
 
     public double distToOrig(){
-        double dist = Math.sqrt(x*x+y*y);
-
-        return dist;
+        return Math.sqrt(x*x+y*y);
     }
 }
