@@ -6,11 +6,21 @@ public class Vertex {
         this.y=y;
     }
 
+    @Override
     public String toString(){
         return "(x:"+x+"; y:"+y+")";
     }
 
     public double distToOrig(){
         return Math.sqrt(x*x+y*y);
+    }
+
+    public Vertex skalarMult(double s){
+        return new Vertex(x*s, y*s);
+    }
+
+    public void skalarMultMod(double s){
+        this.x = x*s;
+        this.y = y*s;
     }
 }
