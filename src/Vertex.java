@@ -58,4 +58,14 @@ public class Vertex {
     public void setY(double yN){
         y=yN;
     }
+
+    //dasgleiche Vertex?
+    public boolean equalsTo(Object thatObj){
+        if(thatObj instanceof Vertex){
+            Vertex that = (Vertex) thatObj;
+
+            return (that.x == this.x)&&(that.y==this.y);
+        }        
+            return false;       
+    }
 }
