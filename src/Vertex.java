@@ -48,6 +48,12 @@ public class Vertex {
         this.y=y-v2.y;
     }
 
+    public Vertex normalize(){
+        double factor = this.distToOrig();
+
+        return new Vertex(x/factor, y/factor);
+    }
+
     //add a new Vertex with the same values
     public Vertex copyVer(){
         return new Vertex(x, y);
