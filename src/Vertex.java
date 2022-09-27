@@ -17,6 +17,14 @@ public class Vertex {
         return Math.sqrt(x*x+y*y);
     }
 
+    //distance between to vertexes
+    public double distToVer(Vertex v2){      
+        double delX = v2.x-this.x;
+        double delY = v2.y-this.y;
+
+        return Math.sqrt(delX*delX + delY*delY);
+    }
+
     //return new Vertex s times bigger
     public Vertex skalarMult(double s){
         return new Vertex(x*s, y*s);
@@ -32,6 +40,12 @@ public class Vertex {
     public void add(Vertex v2){
         this.x=v2.x+x;
         this.y=v2.y+y;
+    }
+
+    //substract a second vertex of the first one
+    public void sub(Vertex v2){
+        this.x=x-v2.x;
+        this.y=y-v2.y;
     }
 
     //add a new Vertex with the same values
