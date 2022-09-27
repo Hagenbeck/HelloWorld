@@ -15,10 +15,15 @@ public class test {
 
         System.out.print("skalarMult:");
         Vertex vS = v1.skalarMult(5);
-        System.out.println(vS.distToOrig());
+        System.out.println(vS);
 
         System.out.print("skalarMultMod:");
         v2.skalarMultMod(6);
-        System.out.println(v2.distToOrig());
+        System.out.println(v2);
+
+        vS.add(v2);
+        System.out.println(vS);
+
+
     }
 }
