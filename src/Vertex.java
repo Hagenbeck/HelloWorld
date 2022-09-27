@@ -23,4 +23,13 @@ public class Vertex {
         this.x = x*s;
         this.y = y*s;
     }
+
+    public void add(Vertex v2){
+        this.x=v2.x+x;
+        this.y=v2.y+y;
+    }
+
+    public Vertex copyVer(){
+        return new Vertex(x, y);
+    }
 }
