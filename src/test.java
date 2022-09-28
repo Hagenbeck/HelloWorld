@@ -29,7 +29,7 @@ public class test {
 
         Vertex vN = vv.copyVer();
         System.out.println(vN.equalsTo(vv));
-        */ 
+         
         
         Vertex v1 = new Vertex(0, 0);
         Vertex v2 = new Vertex(42, 10);
@@ -39,6 +39,12 @@ public class test {
         System.out.println("Distance to Origin(v2):" + v2.distToOrig());
 
         System.out.println("distance v2-v3: "+v2.distToVer(v3));
-
+        */
+        Vertex v1 = new Vertex(0, 0);
+        double d1 = 10.0;
+        double d2 = 20.0;
+        
+        GeometricObject g1 = new GeometricObject(v1, d1, d2);
+        System.out.println(g1);
     }
 }
