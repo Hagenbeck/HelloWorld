@@ -59,10 +59,10 @@ public class GeometricObject {
     public double getHeigth(){
         return heigth;
     }
-    
+
     @Override
     public String toString(){
-        String ret = "(x: "+ pos.x+";y: "+ pos.y+";width: "+ width+";heigth: "+heigth +")";
+        String ret = pos + "(width: "+ width+";heigth: "+heigth +")";
         return ret;
     }
 }
