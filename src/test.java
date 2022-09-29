@@ -40,11 +40,21 @@ public class test {
 
         System.out.println("distance v2-v3: "+v2.distToVer(v3));
         */
-        Vertex v1 = new Vertex(0, 0);
-        double d1 = 10.0;
-        double d2 = 20.0;
+        Vertex v1 = new Vertex(10, 10);
+        double d11 = 10.0;
+        double d12 = 10.0;
         
-        GeometricObject g1 = new GeometricObject(v1, d1, d2);
+        GeometricObject g1 = new GeometricObject(v1, d11, d12);
         System.out.println(g1);
+
+        Vertex v2 = new Vertex( 4 , 12);
+        double d21 = 20;
+        double d22 = 2;
+        
+        GeometricObject g2 = new GeometricObject(v2, d21, d22);
+        System.out.println(g2);
+
+        System.out.println(g1.collides(g2));
+
     }
 }

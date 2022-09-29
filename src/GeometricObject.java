@@ -103,8 +103,13 @@ public class GeometricObject {
                   && this.width==objGeo.width
                   && this.heigth==objGeo.heigth;
         }
-        
+    
         return false;
+    }
+
+    public boolean collides(GeometricObject g2){
+        return this.pos.x <= g2.pos.x+g2.width && this.pos.x+width >= g2.pos.x
+        && this.pos.y <= g2.pos.y+g2.heigth && this.pos.y+heigth >= g2.pos.y;
     }
 
     @Override
