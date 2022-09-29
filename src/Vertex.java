@@ -37,9 +37,13 @@ public class Vertex {
     }
 
     //add a second vertex to the first one
-    public void add(Vertex v2){
+    public void addMod(Vertex v2){
         this.x=v2.x+x;
         this.y=v2.y+y;
+    }
+
+    public Vertex addNew(Vertex v2){
+        return new Vertex(v2.x+this.x,v2.y+this.y);
     }
 
     //substract a second vertex of the first one
