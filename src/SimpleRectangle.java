@@ -9,6 +9,18 @@ public class SimpleRectangle extends GeometricObject{
 
     }
 
+@Override
+    public double area(){
+        return super.area();
+    }
 
+@ Override
+    public String toString(){
+        return "SimpleRectangle: " + super.toString();
+    }
 
+@ Override
+    public boolean equalsTo(Object that){
+        return (that instanceof SimpleRectangle) && this.equals(that);
+    }
 }
