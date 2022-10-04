@@ -114,7 +114,7 @@ public class GeometricObject {
 
     @Override
     public String toString(){
-        String ret = pos + "(width: "+ width+";heigth: "+heigth +")";
+        String ret = "(pos: " + pos + ";width: "+ width+";heigth: "+heigth +")";
         return ret;
     }
 }
