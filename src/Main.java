@@ -1,8 +1,8 @@
 
 import util.ShowInFrame;
 
-public class test {
+public class Main {
     public static void main(String[] args){
-        ShowInFrame.show(new SizedPanel(), "Titel");
+        ShowInFrame.show(new SimpleSizedPanel(), "Titel");
     }   
 }
