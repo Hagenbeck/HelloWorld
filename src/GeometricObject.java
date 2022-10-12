@@ -1,4 +1,4 @@
-
+import java.awt.Color;
 
 
 public class GeometricObject {
@@ -7,10 +7,13 @@ public class GeometricObject {
     double width;
     double heigth;
 
-    public GeometricObject(Vertex pos, double width, double heigth){
+    Color color;
+
+    public GeometricObject(Vertex pos, double width, double heigth, Color color){
         this.pos=pos;
         this.width=width;
-        this.heigth=heigth;  
+        this.heigth=heigth; 
+        this.color = color;
     
         if(width < 0){
             this.width = -width;
@@ -26,24 +29,27 @@ public class GeometricObject {
         }
     }
 
-    public GeometricObject(double x, double y, double width, double heigth){
-        this(new Vertex(x,y), width, heigth);    
+    public GeometricObject(double x, double y, double width, double heigth, int i1, int i2, int i3){
+        this(new Vertex(x,y), width, heigth, new Color(i1, i2, i3));    
+    }
+    public GeometricObject(double x, double y, double width, double heigth, Color color){
+        this(new Vertex(x,y), width, heigth, color);    
     }
 
-    public GeometricObject(double width, double heigth){
-        this(0.0, 0.0, width, heigth);    
+    public GeometricObject(double width, double heigth, int i1, int i2, int i3){
+        this(0.0, 0.0, width, heigth, new Color(i1, i2, i3));    
     }
 
-    public GeometricObject(Vertex pos, double width){
-        this(pos, width, width);
+    public GeometricObject(Vertex pos, double width, int i1, int i2, int i3){
+        this(pos, width, width, new Color(i1, i2, i3));
     }
 
-    public GeometricObject(double heigth){
-        this(0.0,0.0,heigth, heigth);
+    public GeometricObject(double heigth, int i1, int i2, int i3){
+        this(0.0,0.0,heigth, heigth, new Color(i1, i2, i3));
     }
 
     public GeometricObject(){
-        this(0.0, 0.0, 100.0, 100.0); 
+        this(0.0, 0.0, 100.0, 100.0, new Color(0,0,0)); 
     } 
 
 
