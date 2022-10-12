@@ -1,4 +1,4 @@
-package objects;
+
 public class Vertex {
     public double x,y;
     

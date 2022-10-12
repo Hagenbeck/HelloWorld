@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class SimpleSizedPanel extends JPanel{
     int preferredWidth=400;
-    int preferredHeight=300;  
+    int preferredHeight=300;
 
     	public SimpleSizedPanel(int w, int h){
             preferredHeight = h;
@@ -23,5 +23,4 @@ public class SimpleSizedPanel extends JPanel{
         return new Dimension(preferredWidth,preferredHeight);
     }
 
- 
 }

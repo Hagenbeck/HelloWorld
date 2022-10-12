@@ -1,6 +1,6 @@
 
 
-package objects;
+
 public class GeometricObject {
     Vertex pos;
     

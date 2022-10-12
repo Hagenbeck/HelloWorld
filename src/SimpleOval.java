@@ -1,4 +1,4 @@
-package objects;
+
 public class SimpleOval extends GeometricObject{
     public SimpleOval(Vertex pos, double width, double heigth){
         super(pos, width, heigth);

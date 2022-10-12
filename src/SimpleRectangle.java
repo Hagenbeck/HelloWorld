@@ -1,4 +1,4 @@
-package objects;
+
 public class SimpleRectangle extends GeometricObject{
     
     public SimpleRectangle(Vertex pos, double width, double heigth){
