@@ -1,5 +1,5 @@
 import java.awt.Color;
-
+// @Czernohous: Funktioniert noch nicht
 public class PaintableStar implements Paintable {
     int[] x,y;
     int n;
