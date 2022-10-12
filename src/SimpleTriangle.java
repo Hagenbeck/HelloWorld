@@ -1,6 +1,6 @@
 import java.awt.Color;
 public class SimpleTriangle extends GeometricObject{
-
+    
     public SimpleTriangle(Vertex pos, double width, Color color){
         super(pos, width, width * Math.cos(0.52359878), color);    
     }
