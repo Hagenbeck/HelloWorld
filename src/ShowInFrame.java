@@ -8,8 +8,9 @@ public class ShowInFrame {
         JFrame f = new JFrame(title);
         f.add(c);
         f.pack();
+      
         f.setLocationRelativeTo(null); 
         f.setVisible(true);
-    
+        f.repaint();
     }
 }
