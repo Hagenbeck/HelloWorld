@@ -2,9 +2,12 @@ import java.awt.Color;
 public class Main {
     public static void main(String[] args){
         String url = "wasserfall.jpg";
-        PaintableImage pi = new PaintableImage(url,0, 0);
-        PaintablePanel p = new PaintablePanel(pi);
+        GeometricImage gi = new GeometricImage(url,0, 0);
+        PaintablePanel p = new PaintablePanel(gi);
         
-        ShowInFrame.show(p, "Titel");        
+        ShowInFrame.show(p, "Bild");      
+        
+        
+        System.out.println(gi.getHeigth());
     }   
 }

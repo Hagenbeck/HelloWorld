@@ -52,7 +52,6 @@ public class GeometricObject {
         this(0.0, 0.0, 100.0, 100.0, new Color(0,0,0)); 
     } 
 
-
     public double circumference(){
         return 2*(width+heigth);
     }
