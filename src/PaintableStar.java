@@ -1,5 +1,4 @@
 import java.awt.Color;
-// @Czernohous: Funktioniert noch nicht
 public class PaintableStar implements Paintable {
     double x,y;
     int width;
