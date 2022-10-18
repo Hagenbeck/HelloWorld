@@ -35,6 +35,9 @@ public class GeometricObject {
     public GeometricObject(double x, double y, double width, double heigth, Color color){
         this(new Vertex(x,y), width, heigth, color);    
     }
+    public GeometricObject(double x, double y, double width, Color color){
+        this(new Vertex(x,y), width, width, color);    
+    }
 
     public GeometricObject(double width, double heigth, int i1, int i2, int i3){
         this(0.0, 0.0, width, heigth, new Color(i1, i2, i3));    
@@ -122,7 +125,7 @@ public class GeometricObject {
 
     @Override
     public String toString(){
-        String ret = "(pos: " + pos + ";width: "+ width+";heigth: "+heigth +")";
+        String ret = "(pos: " + pos + ";width: "+ width+";heigth: "+heigth +";color: "+color +")";
         return ret;
     }
 }
