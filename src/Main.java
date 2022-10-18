@@ -15,7 +15,7 @@ public class Main {
         ps.add(new GeometricImage(url,0, 0));
 
 
-        ShowInFrame.show(new PaintablesPanel(ps),"Bild");     
+        ShowInFrame.show(new PaintablesPanel(ps, 1000, 1000),"Bild");     
         
     }   
 }
