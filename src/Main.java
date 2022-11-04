@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.util.*;
 public class Main {
     public static void main(String[] args){
         /*String url = "wasserfall.jpg";
@@ -9,6 +10,5 @@ public class Main {
         PaintablePanel p = new PaintablePanel(new PaintableStar(300, 100, 200, Color.black));
 
         ShowInFrame.show(p, "Bild");      
-        
-    }   
+    }
 }
