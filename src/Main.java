@@ -6,7 +6,7 @@ public class Main {
         PaintablePanel p = new PaintablePanel(gi);
         */
 
-        PaintablePanel p = new PaintablePanel(new PaintableStar(200, 100, 100, Color.green));
+        PaintablePanel p = new PaintablePanel(new PaintableStar(300, 100, 200, Color.black));
 
         ShowInFrame.show(p, "Bild");      
         
